@@ -1,0 +1,87 @@
+# Title of the scoreboard
+title: '&e&lUHC &c&lU. Distrital'
+
+# TIP: Scoreboard can support a maximum of 15 lines!
+
+# Placeholders
+# Only on game started:
+#  %deathmatch% = Time until deathmatch.
+#  %time% = Shows how long the game has been going for.
+#  %pvp% = Shows how long left before PvP starts.
+#  %timers% = Shows one of three timers (PvP, Deathmatch & Border) depending on which one is first. (Formatted as "name: time")
+#  %timer-name% = Shows the name of one of three timers (PvP, Deathmatch & Border) depending on which one is first.
+#  %timer-time% = Shows the time of one of three timers (PvP, Deathmatch & Border) depending on which one is first.
+#  %alive% = Show number of players alive who are online.
+#  %teamAlive% = Show number of teams alive.
+#  %playerSpectator% = Show number of spectator.
+#  %playerAlive% = Show number of players alive.
+#  %border% = Show the size of World Border.
+#  %kills% = Number of kills that the player has.
+#  %teamKills% = Number of kills that the team of the player has.
+#  %ylayer% = Display the y layer where the player is.
+#  %xCoordinate% = Display the x coordinate of where the player is.
+#  %zCoordinate% = Display the z coordinate of where the player is.
+#  %kit% = Name of the kit the player is using.
+#  %episode% = Episode number.
+#  %nextEpisode% = Time until next episode.
+#  %money% = The amount of money a player has. (Make sure you have Vault installed!)
+#  %members-name% = Toggles between the members on your team.
+#  %members-health% = Shows the health of the member shows with '%members-name%'.
+#  %scenarios% = The active scenarios.
+# Only on game waiting:
+#  %online% = Show number of players.
+#  %needed% = Show number of needed players to start the game.
+# On game started or waiting:
+#  %teamColor% = The color of the team on tab. (Only a color so you need to put text behind it inorder for it to show.)
+
+# All the above placeholders can also be used externally if PlaceholderAPI is installed,
+# by adding the "uhccore_" prefix. For example, %uhccore_deathmatch% instead of %deathmatch%.
+# If PlaceholderAPI is installed, you can also use other PlaceholderAPI placeholders in the scoreboard below.
+
+# Scoreboard while waiting...
+waiting:
+  - ''
+  - '&eJugadores:'
+  - '&a%online% &7/ &c%needed%'
+  - ''
+  - '&eColor del equipo:'
+  - '&a%teamColor%'
+  - ''
+  - '&aEsperando...'
+  - ''
+
+# Scoreboard while game is playing.
+playing:
+  - ''
+  - ' &a⚔ Meetup: &r%deathmatch%'
+  - ''
+  - ' &b👥 Equipo:'
+  - ' &6» &r%members-name% &c%members-health% ❤'
+  - ''
+  - ' &c⌚ Tiempo: &r%time%'
+  - ''
+  - ' &c🔲 Borde: &r%border%'
+  - ''
+
+# Scoreboard while game is in deathmatch.
+deathmatch:
+  - ''
+  - ' &a⚔ Meetup: &r%deathmatch%'
+  - ''
+  - ' &b👥 Equipo:'
+  - ' &6» &r%members-name% &c%members-health% ❤'
+  - ''
+  - ' &c💀 Jugadores: &r%alive%'
+  - ''
+  - ' &c🔲 Borde: &r%border%'
+  - ''
+
+# Scoreboard while in spectator
+spectating:
+  - ''
+  - ' &a⚔ Meetup: &r%deathmatch%'
+  - ''
+  - ' &c💀 Jugadores: &r%alive%'
+  - ''
+  - ' &c🔲 Borde: &r%border%'
+  - ''

@@ -1,0 +1,63 @@
+{
+  "tcp_alloc": {
+    "allowed": 4,
+    "claimed": 3,
+    "desired": 3
+  },
+  "tunnels": [
+    {
+      "active": true,
+      "agent_over_limit": false,
+      "alloc": {
+        "data": {
+          "assigned_domain": "according-transport.gl.joinmc.link",
+          "assigned_srv": "according-transport.gl.joinmc.link",
+          "assignment": {
+            "type": "shared-ip"
+          },
+          "id": "fb871cf5-8c65-46ce-b47f-8fb7e6370ad8",
+          "ip_hostname": "27.ip.gl.ply.gg",
+          "ip_type": "both",
+          "port_end": 20535,
+          "port_start": 20534,
+          "region": "global",
+          "static_ip4": "147.185.221.27",
+          "static_ip6": "2602:fbaf:0:1::1b",
+          "tunnel_ip": "147.185.221.27"
+        },
+        "status": "allocated"
+      },
+      "created_at": "2025-12-08T04:44:28.826207Z",
+      "disabled_reason": null,
+      "domain": null,
+      "expire_notice": null,
+      "firewall_id": null,
+      "hostname_verify_level": "NoRawIp",
+      "id": "050bf482-64ed-45cb-ac44-ab3879d08815",
+      "name": "Minecraft Java",
+      "origin": {
+        "data": {
+          "agent_id": "50251f87-dec9-4912-9225-5e28619ea050",
+          "agent_name": "lizcanistas",
+          "local_ip": "127.0.0.1",
+          "local_port": 25565
+        },
+        "type": "agent"
+      },
+      "port_count": 1,
+      "port_type": "tcp",
+      "proxy_protocol": null,
+      "ratelimit": {
+        "bytes_per_second": null,
+        "packets_per_second": null
+      },
+      "region": "global",
+      "tunnel_type": "minecraft-java"
+    }
+  ],
+  "udp_alloc": {
+    "allowed": 4,
+    "claimed": 2,
+    "desired": 2
+  }
+}
